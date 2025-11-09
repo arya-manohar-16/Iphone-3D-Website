@@ -81,20 +81,20 @@ const Model = () => {
               size={size}
             />
 
-            <Canvas
-              className="w-full h-full"
-              style={{
-                position: 'absolute',
-                top: 0,
-                bottom: 0,
-                left: 0,
-                right: 0,
-                overflow: 'hidden'
-              }}
-              eventSource={document.getElementById('root')}
-            >
-              <View.Port />
-            </Canvas>
+<div className="relative w-full h-[90vh] overflow-hidden">
+  <Canvas
+    className="w-full h-full"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+    }}
+  >
+    <View.Port />
+  </Canvas>
+</div>
           </div>
 
           <div className="mx-auto w-full">
